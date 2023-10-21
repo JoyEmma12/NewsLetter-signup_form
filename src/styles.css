@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --Dark-SlateGrey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+
+    --paragraph: 14px;
+    --headings: 700;
+    --text-paragraphs: 400;
+    --fonts: Roboto;
+}
+
+body {
+    background-color: var(--Charcoal-Grey);
+}
+
+/*container styling starts*/
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: var(--White);
+    border-radius: 25px;
+}
+
+/*container styling ends*/
+
+/*sub-container styling starts*/
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sub-container div {
+    flex: 1;
+    margin: 0;
+}
+
+.desktop-illustration {
+    width: 300px;
+}
+
+.sub-section1 {
+    padding: 70px;
+}
+
+h1 {
+    font-family: var(--fonts);
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--Dark-SlateGrey);
+}
+
+p {
+    word-break: keep-all;
+    font-size: var(--paragraph);
+    font-family: var(--fonts);
+    font-weight: var(--text-paragraphs);
+}
+
+
+.updates1 {
+    margin: 5px;
+    font-size: var(--paragraph);
+    font-family: var(--fonts);
+    font-weight: var(--text-paragraphs);
+    color: var(--Dark-SlateGrey);
+}
+
+span {
+    margin-left: 5px;
+}
+
+.sub-section2 {
+    padding: 30px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.sign-up-form {
+    padding: 10px;
+}
+
+label {
+    font-size: var(--paragraph);
+    font-family: var(--fonts);
+    font-weight: var(--headings);
+    color: var(--Dark-SlateGrey);
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: var(--Grey);
+    font-weight: var(--text-paragraphs);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--Dark-SlateGrey);
+    color: var(--White);
+    font-weight: var(--text-paragraphs);
+    font-size: var(--paragraph);
+    font-family: var(--fonts);
+}
+
+.dismiss {
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.thanks-sub {
+    max-width: 380px;
+    margin: 10px auto;
+}
+
+.thanks-sub1 {
+    background-color: var(--White);
+}
+
+.mobile-illustration {
+    display: none;
+}
+
+/*reposnsiveness */
+@media screen and (max-width: 375px) {
+    .sub-container {
+        display: block;
+    }
+}
